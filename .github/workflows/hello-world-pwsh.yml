@@ -1,0 +1,19 @@
+name: hello-world-pwsh
+
+on: push
+
+jobs:
+  hello-world-pwsh:
+
+    runs-on: windows-latest
+
+    steps: 
+
+       - name: check out repository code
+        uses: actions/checkout@v4
+      - run: Write-Host Get-Item "hello_world.txt"
+
+  
+  
+
+  
