@@ -10,8 +10,8 @@ jobs:
     steps: 
 
        - name: check out repository code
-        uses: actions/checkout@v4
-      - run: Write-Host Get-Item "hello_world.txt"
+         uses: actions/checkout@v4
+       - run: Write-Host Get-Item "hello_world.txt"
 
   
   
