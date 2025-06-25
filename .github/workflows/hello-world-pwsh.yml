@@ -1,6 +1,8 @@
 name: hello-world-pwsh
 
-on: push
+on: 
+  check_suite:
+    types: [completed]
 
 jobs:
   hello-world-pwsh:
