@@ -12,7 +12,7 @@ jobs:
        - name: check out repository code
          uses: actions/checkout@v4
        - run: |
-           cd ${{github.workspace }}
+           cd ${{ github.workspace }}
               $txt= Get-Item "hello_world.txt" 
               Write-Host $txt
 
