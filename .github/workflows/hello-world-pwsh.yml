@@ -11,8 +11,10 @@ jobs:
 
        - name: check out repository code
          uses: actions/checkout@v4
-       - run: $txt= Get-Item "hello_world.txt" 
-               Write-Host $txt
+       - run: |
+           cd ${{github.workspace }}
+              $txt= Get-Item "hello_world.txt" 
+              Write-Host $txt
 
   
   
